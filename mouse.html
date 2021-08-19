@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body{
+		color: black;
+		font-family: Helvetica;
+		font-size: large;
+		background-color: grey;
+	}
+	canvas{
+		background: white;
+	}
+	</style>
+	<title>Dibujando con mi mouse</title>
+</head>
+<body>
+	<h1>Dibujar con tu mouse!</h1>
+	<canvas width="600" height="600" id="milienzo"></canvas>
+	<p>Escoge el color con el que quieres dibujar: <br><input type="color" id="colorfacha"></br></p>
+	<p>Escoge el grosor de tu pincel: </p>
+	<p><input type="range"  id="grosorfacha" min="0" max="100" onchange="rangoValor(grosorfacha.value);"/> <input type="text" id="textogrosorfacha" value="" style="width: 25px";/></p>
+	<p><input type="button" value="LIMPIAR CANVAS" id="botonfacha"/> </p>
+	<script src="programa.js"></script>
+</body>
+</html>
